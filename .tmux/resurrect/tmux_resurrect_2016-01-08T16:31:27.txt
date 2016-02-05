@@ -1,0 +1,33 @@
+pane	TryIt	0	:ios	1	:*	0	:/Users/ryuichiyasuda/Applications/monstar-lab/ios/try-it-ios-student	0	zsh	:
+pane	TryIt	0	:ios	1	:*	1	:/Users/ryuichiyasuda/Applications/monstar-lab/ios/try-it-ios-student	0	zsh	:
+pane	TryIt	0	:ios	1	:*	2	:/Users/ryuichiyasuda/Applications/monstar-lab/ios/try-it-ios-student	1	zsh	:
+pane	TryIt	1	:console	0	:-	0	:/Users/ryuichiyasuda/Applications/monstar-lab/ios/try-it-ios-student/TryIt	1	zsh	:
+pane	TryIt	2	:log	0	:	0	:/Users/ryuichiyasuda	1	zsh	:
+pane	TryIt	3	:zsh	0	:	0	:/Users/ryuichiyasuda	1	zsh	:
+pane	qii3hx	0	:ios	0	:-	0	:/Users/ryuichiyasuda/Applications/qii3hx/ios/TestingInSwift	1	zsh	:
+pane	qii3hx	0	:ios	0	:-	1	:/Users/ryuichiyasuda/Applications/qii3hx/ios/TestingInSwift	0	zsh	:
+pane	qii3hx	0	:ios	0	:-	2	:/Users/ryuichiyasuda/Applications/qii3hx/ios/TestingInSwift	0	zsh	:
+pane	qii3hx	1	:rails	1	:*	0	:/Users/ryuichiyasuda/Applications/qii3hx/rails/simple-twitter-clone	1	zsh	:
+pane	qii3hx	1	:rails	1	:*	1	:/Users/ryuichiyasuda/Applications/qii3hx/rails/simple-twitter-clone	0	vim	:vim .git/hooks/pre-commit
+pane	qii3hx	2	:node	0	:	0	:/Users/ryuichiyasuda/Applications/qii3hx/node/node-js-sample	1	zsh	:
+pane	qii3hx	3	:swift	0	:	0	:/Users/ryuichiyasuda/Applications/qii3hx/perfect/Perfect/Examples	1	zsh	:
+pane	qii3hx	4	:golang	0	:	0	:/Users/ryuichiyasuda/Applications/qii3hx/golang/go-github	1	zsh	:
+pane	qii3hx	5	:es6	0	:	0	:/Users/ryuichiyasuda/Applications/qii3hx/javascript/es6-tutorial	1	zsh	:
+pane	shakr	0	:ios	0	:-	0	:/Users/ryuichiyasuda/Applications/shakr/ios/chatit-ios	0	zsh	:
+pane	shakr	0	:ios	0	:-	1	:/Users/ryuichiyasuda	1	zsh	:
+pane	shakr	1	:rails	1	:*	0	:/Users/ryuichiyasuda/Applications/shakr/rails/chatit-backend	0	zsh	:
+pane	shakr	1	:rails	1	:*	1	:/Users/ryuichiyasuda/Applications/shakr/rails/chatit-backend	0	zsh	:
+pane	shakr	1	:rails	1	:*	2	:/Users/ryuichiyasuda/Applications/shakr/rails/chatit-backend	1	ruby	:ruby /usr/local/bin/guard
+window	TryIt	0	1	:*	0697,272x59,0,0{136x59,0,0[136x29,0,0,2,136x29,0,30,3],135x59,137,0,4}
+window	TryIt	1	0	:-	d362,272x59,0,0,5
+window	TryIt	2	0	:	d363,272x59,0,0,6
+window	TryIt	3	0	:	d364,272x59,0,0,7
+window	qii3hx	0	0	:-	cc54,272x59,0,0{136x59,0,0[136x29,0,0,8,136x29,0,30,23],135x59,137,0,9}
+window	qii3hx	1	1	:*	98e1,272x59,0,0{136x59,0,0,10,135x59,137,0,11}
+window	qii3hx	2	0	:	69e1,272x59,0,0,12
+window	qii3hx	3	0	:	69e2,272x59,0,0,13
+window	qii3hx	4	0	:	69e3,272x59,0,0,14
+window	qii3hx	5	0	:	69e4,272x59,0,0,15
+window	shakr	0	0	:-	6887,272x59,0,0{136x59,0,0,0,135x59,137,0,19}
+window	shakr	1	1	:*	3c89,272x59,0,0{136x59,0,0[136x29,0,0,16,136x29,0,30,22],135x59,137,0,21}
+state	shakr	qii3hx
