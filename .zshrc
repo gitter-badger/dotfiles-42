@@ -52,7 +52,11 @@ ZSH_CUSTOM=${HOME}/.zsh
 plugins=(bundler brew git notify osx rails ruby)
 
 # notify
+export SYS_NOTIFIER="${HOME}/.rbenv/shims/terminal-notifier"
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
+
+# Powerline
+export PATH=~/Library/Python/2.7/bin:$PATH
 
 # User configuration
 export PATH=/usr/local/bin:$PATH
@@ -61,14 +65,24 @@ export PATH=/usr/local/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
+fpath=(~/.zsh/*(N-/) $fpath)
+autoload -Uz peco-select-history
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+# Go
+export GOPATH=$HOME/Applications/qii3hx/go
+export PATH=$PATH:$GOPATH/bin
+
 # postgreSQL
 export PGDATA=/usr/local/var/postgres
+
+# added by travis gem
+[ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -95,6 +109,20 @@ export PGDATA=/usr/local/var/postgres
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# added by travis gem
-[ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
+# peco
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^f' peco-select-history
 
