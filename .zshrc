@@ -52,7 +52,7 @@ ZSH_CUSTOM=${HOME}/.zsh
 plugins=(bundler brew git notify osx rails ruby)
 
 # notify
-export SYS_NOTIFIER="${HOME}/.rbenv/shims/terminal-notifier"
+export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 
 # Powerline
@@ -65,8 +65,8 @@ export PATH=/usr/local/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
-fpath=(~/.zsh/*(N-/) $fpath)
-autoload -Uz peco-select-history
+# Homebrew
+export PATH="/usr/local/sbin:$PATH"
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
