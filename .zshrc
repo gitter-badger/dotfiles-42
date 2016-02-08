@@ -56,7 +56,7 @@ export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 
 # Powerline
-export PATH=~/Library/Python/2.7/bin:$PATH
+export PATH=/usr/local/lib/python2.7/sbin:$PATH
 
 # User configuration
 export PATH=/usr/local/bin:$PATH
@@ -85,7 +85,10 @@ export PGDATA=/usr/local/var/postgres
 [ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+#
+# python
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
