@@ -1,0 +1,19 @@
+"*":
+  codic:
+    accessToken: "8j7KJsxkHWO5jjn4mJ0U1T3wRvvIQdQ4ir"
+  core: {}
+  editor:
+    fontSize: 12
+    invisibles: {}
+    showInvisibles: true
+  "exception-reporting":
+    userId: "c4d8e155-46ad-ea54-bb89-4b55d01eb59d"
+  "markdown-preview-opener":
+    closePreviewWhenClosingEditor: true
+  "markdown-preview-plus": {}
+  "markdown-preview-plus-opener":
+    closePreviewWhenClosingEditor: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
