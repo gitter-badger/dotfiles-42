@@ -1,0 +1,15 @@
+packages: [
+  "codic"
+  "editor-stats"
+  "markdown-preview-opener"
+  "markdown-preview-plus"
+  "markdown-preview-plus-opener"
+  "markdown-scroll-sync"
+  "markdown-writer"
+  "mathjax-wrapper"
+  "multi-cursor"
+  "package-sync"
+  "recent-files-fuzzy-finder"
+  "tree-view-filter"
+  "vim-mode"
+]
