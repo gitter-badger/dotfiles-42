@@ -49,7 +49,7 @@ ZSH_CUSTOM=${HOME}/.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bundler brew git notify osx rails ruby)
+plugins=(bundler brew git osx rails ruby)
 
 # notify
 export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
@@ -75,11 +75,12 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # Go
-export GOPATH=$HOME/Applications/qii3hx/go
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
 # postgreSQL
 export PGDATA=/usr/local/var/postgres
+export PGHOST=localhost
 
 # added by travis gem
 [ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
@@ -93,6 +94,8 @@ export LANG=en_US.UTF-8
 # Swift
 PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 
+# Composer
+PATH=~/.composer/vendor/bin:$PATH
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'

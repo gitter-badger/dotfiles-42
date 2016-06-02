@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-DOT_DIRECTORY="${HOME}/dotfiles"
+DOT_DIRECTORY="${HOME}/.dotfiles"
 
 cd ${DOT_DIRECTORY}
 

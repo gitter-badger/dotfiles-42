@@ -1,5 +1,5 @@
 set autoindent
-set backupdir=$HOME/vimbackup
+set backupdir=$HOME/.vimbackup
 set clipboard=unnamed,autoselect
 set nocompatible
 set expandtab
@@ -22,15 +22,11 @@ set showcmd
 set showmatch
 set whichwrap=b,s,h,l,<,>,[,]
 set backupskip+=/home/tmp/*,/private/tmp/*
-set background=dark
 set t_Co=256
 set timeoutlen=100 ttimeoutlen=0
 
 filetype indent on
-syntax on
 filetype off
-
-colorscheme molokai
 
 if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim
@@ -83,33 +79,31 @@ NeoBundle 'xolox/vim-session', {
 			\ }
 NeoBundle 'szw/vim-tags'
 NeoBundle 'tpope/vim-obsession'
+NeoBundle 'w0ng/vim-hybrid'
 
 call neobundle#end()
+
+syntax enable
+set background=dark
+colorscheme hybrid
 
 let g:neocomplete#enable_at_startup = 1
 let g:rspec_command = "Dispatch rspec {spec}"
 let g:unite_enable_start_insert = 1
 
-" .や::を入力したときにオムニ補完が有効になるようにする
 if !exists('g:neocomplete#force_omni_input_patterns')
 	let g:neocomplete#force_omni_input_patterns = {}
 endif
 let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 
-" RSENSE_HOMEの環境変数
 let g:neocomplete#sources#rsense#home_directory = '/usr/local/bin/rsense'
 
 " vim-session
-" 現在のディレクトリ直下の .vimsessions/ を取得
 let s:local_session_directory = xolox#misc#path#merge(getcwd(), '.vimsessions')
 if isdirectory(s:local_session_directory)
-	" session保存ディレクトリをそのディレクトリの設定
 	let g:session_directory = s:local_session_directory
-	" vim終了時に自動保存
 	let g:session_autosave = 'yes'
-	" 引数なしでvimを起動した時にsession保存ディレクトリのdefault.vimを開く
 	let g:session_autoload = 'yes'
-	" 5分間に1回自動保存
 	let g:session_autosave_periodic = 5
 else
 	let g:session_autosave = 'no'
@@ -148,7 +142,7 @@ nnoremap <silent> <C-L> :noh<C-L><CR>
 " buffers
 nnoremap <silent> ;; :<C-u>buffers<CR>
 
-" Insertモードのときカーソルの形状を変更
+" change cursor shape on insert-mode
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
@@ -162,3 +156,4 @@ set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 set laststatus=2
 set showtabline=2
 set noshowmode
+
