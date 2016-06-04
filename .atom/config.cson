@@ -1,7 +1,10 @@
 "*":
   codic:
     accessToken: "8j7KJsxkHWO5jjn4mJ0U1T3wRvvIQdQ4ir"
-  core: {}
+  core:
+    disabledPackages: [
+      "markdown-preview-opener"
+    ]
   editor:
     fontSize: 12
     invisibles: {}
@@ -13,7 +16,6 @@
   "markdown-preview-plus": {}
   "markdown-preview-plus-opener":
     closePreviewWhenClosingEditor: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
