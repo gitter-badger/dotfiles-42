@@ -4,6 +4,8 @@ DOT_DIRECTORY="${HOME}/.dotfiles"
 
 cd ${DOT_DIRECTORY}
 
+ln -snfv ${DOT_DIRECTORY}/karabiner.xml ${HOME}/Library/Application\ Support/Karabiner/private.xml
+
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
