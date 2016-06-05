@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+      <name>My Simple Vi Mode V2</name>
+    <item>
+      <name>Change left control+hnpl keys to arrow keys</name>
+      <identifier>private.left_control_and_hnpl_keys_to_arrow_keys</identifier>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item>
+      <name>Change left control+fn+hjkl keys to home, page_down, page_up, end</name>
+      <identifier>private.left_control_and_fn_and_hnpl_keys_to_home_page_down_page_up_end</identifier>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::HOME</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::PAGEDOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::PAGEUP</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::END</autogen>
+    </item>
+  </item>
+</root>
+
