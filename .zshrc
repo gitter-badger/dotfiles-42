@@ -49,7 +49,7 @@ ZSH_CUSTOM=${HOME}/.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bundler brew git osx rails ruby)
+plugins=(bundler brew git osx rails ruby notify)
 
 # notify
 export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
@@ -117,21 +117,22 @@ PATH=~/.composer/vendor/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# History
+HISTSIZE=1000000
+SAVEHIST=$HISTSIZE
 
-# peco
-function peco-select-history() {
-    local tac
-    if which tac > /dev/null; then
-        tac="tac"
-    else
-        tac="tail -r"
-    fi
-    BUFFER=$(\history -n 1 | \
-        eval $tac | \
-        peco --query "$LBUFFER")
-    CURSOR=$#BUFFER
-    zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^f' peco-select-history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt inc_append_history
+setopt share_history
 
+alias history='history -t "%Y-%m-%d %a %H:%M:%S"'
+function history-all { history 1 }
+
+# load custom executable functions
+for function in ~/.zsh/functions/*; do
+  source $function
+done
