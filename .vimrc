@@ -1,4 +1,5 @@
 set autoindent
+set autoread
 set backupdir=$HOME/.vimbackup
 set clipboard=unnamed,autoselect
 set nocompatible
@@ -24,7 +25,6 @@ set whichwrap=b,s,h,l,<,>,[,]
 set backupskip+=/home/tmp/*,/private/tmp/*
 set t_Co=256
 set timeoutlen=100 ttimeoutlen=0
-
 filetype indent on
 filetype off
 
