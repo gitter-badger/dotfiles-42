@@ -51,6 +51,10 @@ ZSH_CUSTOM=${HOME}/.zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(bundler brew git osx rails ruby notify)
 
+# coreutils with their normal names
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
 # notify
 export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
@@ -73,6 +77,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Go
 export GOPATH=$HOME/.go

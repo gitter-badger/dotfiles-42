@@ -3,19 +3,35 @@
     accessToken: "8j7KJsxkHWO5jjn4mJ0U1T3wRvvIQdQ4ir"
   core:
     disabledPackages: [
-      "markdown-preview-opener"
+      "markdown-preview"
     ]
   editor:
     fontSize: 12
     invisibles: {}
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…、。「」【】『』（）！？　てにをはがのともへでや"
     showInvisibles: true
+    softWrap: true
   "exception-reporting":
     userId: "c4d8e155-46ad-ea54-bb89-4b55d01eb59d"
+  "markdown-preview-enhanced":
+    pumlConfigFile: "/Users/ryuichiyasuda/.dotfiles/.atom/.plantuml-viewer/inc/color.inc"
+    useGitHubStyle: false
+  "markdown-preview-enhanced-custom":
+    pumlConfigFile: "/Users/ryuichiyasuda/.dotfiles/.atom/.plantuml-viewer/inc/color.inc"
   "markdown-preview-opener":
     closePreviewWhenClosingEditor: true
   "markdown-preview-plus": {}
   "markdown-preview-plus-opener":
     closePreviewWhenClosingEditor: true
-  "tree-view": {}
+  minimap: {}
+  "plantuml-viewer":
+    configFile: "/Users/ryuichiyasuda/.dotfiles/.atom/.plantuml-viewer/inc/color.inc"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "tree-view-filter":
+    fuzzySearch: true
   welcome:
     showOnStartup: false
+".plantuml.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…、。「」【】『』（）！？　てにをはがのともへでや"
