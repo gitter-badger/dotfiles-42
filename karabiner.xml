@@ -77,7 +77,9 @@
       <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::SHIFT_R, KeyCode::F7</autogen>
       <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::SHIFT_R, KeyCode::F8</autogen>
       <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::SHIFT_R, KeyCode::F9</autogen>
-      <autogen>__KeyToKey__ KeyCode::0, ModifierFlag::SHIFT_R, KeyCode::F12</autogen>
+      <autogen>__KeyToKey__ KeyCode::0, ModifierFlag::SHIFT_R, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::SHIFT_R, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::SHIFT_R, KeyCode::F12</autogen>
     </item>
   </item>
 </root>
