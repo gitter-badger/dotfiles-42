@@ -3,12 +3,34 @@
   <item>
       <name>My Simple Vi Mode V2</name>
     <item>
-      <name>Change left control+hjkl keys to arrow keys</name>
-      <identifier>private.left_control_and_hnpl_keys_to_arrow_keys</identifier>
-      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
-      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
-      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+      <name>Change fn+hjkl keys to arrow keys</name>
+      <identifier>private.fn_and_hnpl_keys_to_arrow_keys</identifier>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item>
+      <name>Change fn+du keys to page_down, page_up</name>
+      <identifier>private.fn_and_du_keys_to_page_down_page_up</identifier>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::PAGEDOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::PAGEUP</autogen>
+    </item>
+    <item>
+      <name>Change fn+gG keys to home, end</name>
+      <identifier>private.fn_and_gG_keys_to_home_end</identifier>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::HOME</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN | ModifierFlag::SHIFT_L, KeyCode::END</autogen>
+    </item>
+    <item>
+      <name>Change left control+m key to return</name>
+      <identifier>private.left_control_and_m_to_return</identifier>
+      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::CONTROL_L, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Change left control+h key to delete</name>
+      <identifier>private.left_control_and_h_to_delete</identifier>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::DELETE</autogen>
     </item>
     <item>
       <name>Change left control+np keys to arrow keys</name>
@@ -23,6 +45,39 @@
       <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::PAGEDOWN</autogen>
       <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::PAGEUP</autogen>
       <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::END</autogen>
+    </item>
+  </item>
+  <item>
+      <name>My HHKB Mode</name>
+    <item>
+      <name>Change SHIFT_R+;/[' keys to arrow keys</name>
+      <identifier>private.right_shift_and_;/['_keys_to_arrow_keys</identifier>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::SHIFT_R, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::SHIFT_R, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_R, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::SHIFT_R, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item>
+      <name>Change SHIFT_R+k.l, keys to home, page_down, page_up, end</name>
+      <identifier>private.right_shift_and_k.l,_keys_to_home_page_down_page_up_end</identifier>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::SHIFT_R, KeyCode::HOME</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::SHIFT_R, KeyCode::PAGEDOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::SHIFT_R, KeyCode::PAGEUP</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::SHIFT_R, KeyCode::END</autogen>
+    </item>
+    <item>
+      <name>Change SHIFT_R+number keys to function keys</name>
+      <identifier>private.right_shift_and_number_keys_to_function_keys</identifier>
+      <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::SHIFT_R, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::SHIFT_R, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::SHIFT_R, KeyCode::F3</autogen>
+      <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::SHIFT_R, KeyCode::F4</autogen>
+      <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::SHIFT_R, KeyCode::F5</autogen>
+      <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::SHIFT_R, KeyCode::F6</autogen>
+      <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::SHIFT_R, KeyCode::F7</autogen>
+      <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::SHIFT_R, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::SHIFT_R, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ KeyCode::0, ModifierFlag::SHIFT_R, KeyCode::F12</autogen>
     </item>
   </item>
 </root>
