@@ -17,9 +17,8 @@
       <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::PAGEUP</autogen>
     </item>
     <item>
-      <name>Change fn+gG keys to home, end</name>
-      <identifier>private.fn_and_gG_keys_to_home_end</identifier>
-      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::HOME</autogen>
+      <name>Change fn+G keys to end</name>
+      <identifier>private.fn_and_shift_and_g_keys_to_end</identifier>
       <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN | ModifierFlag::SHIFT_L, KeyCode::END</autogen>
     </item>
     <item>
@@ -39,12 +38,41 @@
       <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
     </item>
     <item>
+      <name>Change left control+[ keys to esc</name>
+      <identifier>private.left_control_and_bracket_left_to_escape</identifier>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::ESCAPE</autogen>
+    </item>
+    <item>
       <name>Change left control+fn+hjkl keys to home, page_down, page_up, end</name>
       <identifier>private.left_control_and_fn_and_hnpl_keys_to_home_page_down_page_up_end</identifier>
       <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::HOME</autogen>
       <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::PAGEDOWN</autogen>
       <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::PAGEUP</autogen>
       <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L | ModifierFlag::FN, KeyCode::END</autogen>
+    </item>
+    <item>
+        <name>Leave Insert Mode with EISUU (vim keybind apps)</name>
+        <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+    <item>
+      <name>[ex] Use fn+G as prefix key</name>
+      <item>
+        <!-- fn-G Mode Core -->
+        <name>fn+g detail</name>
+        <appendix>fn-g g to Home</appendix>
+        <appendix>fn-g esc to turn off fn+G Mode</appendix>
+        <identifier vk_config="true">notsave.vimmode_ex_fnG_core</identifier>
+        <autogen>__ShowStatusMessage__ vim-mode g</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, KeyCode::HOME, KeyCode::VK_CONFIG_FORCE_OFF_notsave_vimmode_ex_fnG_core</autogen>
+        <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_vimmode_ex_fnG_core</autogen>
+      </item>
+      <item>
+        <name>Enable fn+G</name>
+        <identifier>option.vimmode_ex_fnG</identifier>
+        <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::VK_CONFIG_FORCE_ON_notsave_vimmode_ex_fnG_core</autogen>
+      </item>
     </item>
   </item>
   <item>
