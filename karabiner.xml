@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="3.0"?>
 <root>
   <item>
-      <name>My Simple Vi Mode V2</name>
+      <name>My Vi Mode</name>
     <item>
       <name>Change fn+hjkl keys to arrow keys</name>
       <identifier>private.fn_and_hnpl_keys_to_arrow_keys</identifier>
@@ -30,12 +30,6 @@
       <name>Change left control+h key to delete</name>
       <identifier>private.left_control_and_h_to_delete</identifier>
       <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::DELETE</autogen>
-    </item>
-    <item>
-      <name>Change left control+np keys to arrow keys</name>
-      <identifier>private.left_control_and_np_keys_to_arrow_keys</identifier>
-      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
-      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
     </item>
     <item>
       <name>Change left control+[ keys to esc</name>
@@ -73,6 +67,35 @@
         <identifier>option.vimmode_ex_fnG</identifier>
         <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::VK_CONFIG_FORCE_ON_notsave_vimmode_ex_fnG_core</autogen>
       </item>
+    </item>
+  </item>
+  <item>
+      <name>My Emacs Mode</name>
+   <appdef>
+        <appname>iTERM2</appname>
+        <equal>com.googlecode.iterm2</equal>
+    </appdef>
+    <appdef>
+        <appname>MACVIM</appname>
+        <equal>org.vim.MacVim</equal>
+    </appdef>
+    <appdef>
+        <appname>ATOM</appname>
+        <equal>com.github.atom</equal>
+    </appdef>
+    <item>
+      <name>Change left control+np keys to down, up</name>
+      <identifier>private.left_control_and_np_keys_to_down_up</identifier>
+      <not>iTERM2,TERMINAL,MACVIM, ATOM</not>
+      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+    </item>
+<item>
+      <name>Change left control+fb keys to right, left</name>
+      <identifier>private.left_control_and_fb_keys_to_right_left</identifier>
+      <not>iTERM2,TERMINAL,MACVIM, ATOM</not>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
     </item>
   </item>
   <item>
