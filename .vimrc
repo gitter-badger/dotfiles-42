@@ -2,31 +2,9 @@ set autoindent
 set autoread
 set backupdir=$HOME/.vimbackup
 set clipboard=unnamed,autoselect
-set nocompatible
-set expandtab
-set incsearch
-set number
-set shiftwidth=2
-set tabstop=2
-set showmatch
-set smartcase
-set smartindent
-set smarttab
 set backup
-set ruler
-set cmdheight=2
-set cmdheight=2
-set laststatus=2
-set title
-set wildmenu
-set showcmd
-set showmatch
-set whichwrap=b,s,h,l,<,>,[,]
-set backupskip+=/home/tmp/*,/private/tmp/*
+set number
 set t_Co=256
-set timeoutlen=100 ttimeoutlen=0
-filetype indent on
-filetype off
 
 if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim
