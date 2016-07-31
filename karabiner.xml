@@ -90,12 +90,24 @@
       <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
       <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
     </item>
-<item>
+    <item>
       <name>Change left control+fb keys to right, left</name>
       <identifier>private.left_control_and_fb_keys_to_right_left</identifier>
       <not>iTERM2,TERMINAL,MACVIM, ATOM</not>
       <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
       <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+    </item>
+    <item>
+      <name>Change left control+u keys to command+delete keys</name>
+      <identifier>private.left_control_and_u_keys_to_command_delete</identifier>
+      <not>iTERM2,TERMINAL,MACVIM, ATOM</not>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Change left control+w keys to option+delete keys</name>
+      <identifier>private.left_control_and_w_keys_to_option_delete</identifier>
+      <not>iTERM2,TERMINAL,MACVIM, ATOM</not>
+      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::OPTION_L</autogen>
     </item>
   </item>
   <item>
