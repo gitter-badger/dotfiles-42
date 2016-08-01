@@ -6,23 +6,12 @@ set backup
 set number
 set t_Co=256
 
-if has('vim_starting')
-	set runtimepath+=~/.vim/bundle/neobundle.vim
-	call neobundle#begin(expand('~/.vim/bundle/'))
-	NeoBundleFetch 'Shougo/neobundle.vim'
-endif
-
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'w0ng/vim-hybrid'
-
-call neobundle#end()
-
 syntax enable
 set background=dark
 colorscheme hybrid
 
 " change cursor shape on insert-mode
+set timeoutlen=100 ttimeoutlen=0
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
