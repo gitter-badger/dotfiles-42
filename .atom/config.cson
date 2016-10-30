@@ -3,10 +3,9 @@
     accessToken: "8j7KJsxkHWO5jjn4mJ0U1T3wRvvIQdQ4ir"
   core:
     disabledPackages: [
-      "markdown-preview"
+      "markdown-writer"
     ]
   editor:
-    fontSize: 12
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…、。「」【】『』（）！？　てにをはがのともへでや"
     showInvisibles: true
@@ -26,8 +25,7 @@
   minimap: {}
   "plantuml-viewer":
     configFile: "/Users/ryuichiyasuda/.dotfiles/.atom/.plantuml-viewer/inc/color.inc"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "tree-view-filter":
     fuzzySearch: true
   welcome:

@@ -24,3 +24,10 @@ skinparam class {
   FontColor #ffffff
   AttributeFontColor #ffffff
 }
+
+skinparam package {
+	BackgroundColor #225378
+	BorderColor #444242
+  FontColor #ffffff
+  FontStyle plain
+}
