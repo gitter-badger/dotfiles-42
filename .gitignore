@@ -7,5 +7,6 @@
 .tmux/resurrect/*.txt
 .vim/.netrwhist
 .vim/bundle/
+.vim/tmp/
 !.vim/bundle/neobundle.vim
 !.vim/bundle/NeoBundle.lock
