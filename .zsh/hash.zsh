@@ -1,4 +1,4 @@
-hash -d monstar=~/Applications/monstar-lab
-hash -d lyuich=~/Applications/lyuich
-hash -d shakr=~/Applications/shakr
+hash -d monstar=~/Code/monstar-lab
+hash -d lyuich=~/Code/lyuich
+hash -d shakr=~/Code/shakr
 
