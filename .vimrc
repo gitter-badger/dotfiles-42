@@ -5,11 +5,10 @@ set clipboard=unnamed,autoselect
 set backup
 set number
 set t_Co=256
-set tabstop=4 shiftwidth=4 softtabstop=4
-set expandtab
+set ts=4 sw=4 sts=4 expandtab
 set backspace=2
 
-filetype plugin indent on
+autocmd BufNewFile,BufRead *.md,*.rb setlocal ts=2 sw=2 sts=2
 
 syntax enable
 set background=dark
