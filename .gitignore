@@ -4,9 +4,8 @@
 .atom/compile-cache/
 .atom/packages/
 .atom/storage/
-.tmux/resurrect/*.txt
-.vim/.netrwhist
+.tmux/resurrect/
+.tmux/plugins/
 .vim/bundle/
 .vim/tmp/
-!.vim/bundle/neobundle.vim
-!.vim/bundle/NeoBundle.lock
+.vim/.netrwhist
