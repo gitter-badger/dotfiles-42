@@ -13,6 +13,7 @@
   "exception-reporting":
     userId: "c4d8e155-46ad-ea54-bb89-4b55d01eb59d"
   "markdown-preview-enhanced":
+    mermaidTheme: "mermaid.dark.css"
     pumlConfigFile: "/Users/ryuichiyasuda/.dotfiles/.atom/.plantuml-viewer/inc/color.inc"
     useGitHubStyle: false
   "markdown-preview-enhanced-custom":
