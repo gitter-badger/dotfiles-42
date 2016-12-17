@@ -8,7 +8,8 @@ set t_Co=256
 set ts=4 sw=4 sts=4 expandtab
 set backspace=2
 
-autocmd BufNewFile,BufRead *.md,*.rb setlocal ts=2 sw=2 sts=2
+autocmd BufNewFile,BufRead *.md setlocal ts=2 sw=2 sts=2
+autocmd FileType ruby setlocal ts=2 sw=2 sts=2
 
 syntax enable
 set background=dark
