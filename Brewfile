@@ -1,22 +1,35 @@
 cask_args appdir: '/Applications'
 
+tap 'caskroom/cask'
+
 brew 'vim', args: ['with-lua']
 brew 'zsh'
 brew 'tmux'
-brew 'reattach-to-user-namespace'
+
 brew 'ghq'
 brew 'peco'
 brew 'z'
+brew 'mas'
+
+brew 'reattach-to-user-namespace'
 
 brew 'git'
+brew 'gist'
 brew 'git-secrets'
 brew 'hub'
 brew 'ghi'
 
 brew 'ruby'
 brew 'python'
+brew 'perl'
+brew 'go'
+
+brew 'carthage'
 
 brew 'ansible'
+brew 'docker'
+
+brew 'tree'
 brew 'terminal-notifier'
 brew 'doxygen'
 
@@ -24,6 +37,8 @@ cask 'adobe-acrobat'
 cask 'adobe-creative-cloud'
 cask 'adobe-photoshop-cc'
 cask 'alfred'
+cask 'appcode'
+cask 'charles'
 cask 'chatwork'
 cask 'dropbox'
 cask 'flux'
@@ -41,8 +56,10 @@ cask 'spotify'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'zeplin'
+cask 'zoomus'
 
 mas '1Password', id: 443987910
 mas 'Xcode', id: 497799835 
 mas 'TweetDeck', id: 485812721 
 mas 'Slack', id: 803453959 
+
