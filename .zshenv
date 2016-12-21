@@ -53,5 +53,3 @@ PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 # Composer
 PATH=~/.composer/vendor/bin:$PATH
 
-### Added by the Bluemix CLI
-source /usr/local/Bluemix/bx/zsh_autocomplete
