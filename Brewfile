@@ -23,6 +23,7 @@ brew 'ruby'
 brew 'python'
 brew 'perl'
 brew 'go'
+brew 'node'
 
 brew 'carthage'
 
@@ -32,6 +33,8 @@ brew 'docker'
 brew 'tree'
 brew 'terminal-notifier'
 brew 'doxygen'
+brew 'w3m'
+brew 'elinks'
 
 cask 'adobe-acrobat'
 cask 'adobe-creative-cloud'
