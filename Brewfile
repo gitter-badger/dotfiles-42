@@ -18,6 +18,7 @@ brew 'gist'
 brew 'git-secrets'
 brew 'hub'
 brew 'ghi'
+brew 'tig'
 
 brew 'ruby'
 brew 'python'
