@@ -53,3 +53,5 @@ PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 # Composer
 PATH=~/.composer/vendor/bin:$PATH
 
+# npm
+export NODE_PATH=/usr/local/lib/node_modules
