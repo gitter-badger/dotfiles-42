@@ -11,7 +11,6 @@ export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 # Powerline
 export PATH=/usr/local/lib/python2.7/sbin:$PATH
 
-
 # coreutils with their normal names
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
@@ -55,3 +54,8 @@ PATH=~/.composer/vendor/bin:$PATH
 
 # npm
 export NODE_PATH=/usr/local/lib/node_modules
+
+# Editor
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
