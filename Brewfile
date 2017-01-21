@@ -18,7 +18,7 @@ brew 'reattach-to-user-namespace'
 brew 'git'
 brew 'gist'
 brew 'git-secrets'
-brew 'hub'
+brew 'hub', args: ['HEAD']
 brew 'ghi'
 
 brew 'ruby'
