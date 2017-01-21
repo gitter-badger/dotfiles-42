@@ -42,6 +42,8 @@ brew 'terminal-notifier'
 brew 'doxygen'
 brew 'w3m'
 brew 'elinks'
+brew 'wget'
+brew 'googler'
 
 cask 'adobe-acrobat'
 cask 'adobe-creative-cloud'
