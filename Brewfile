@@ -11,6 +11,8 @@ brew 'peco'
 brew 'z'
 brew 'mas'
 
+brew 'gawk'
+
 brew 'reattach-to-user-namespace'
 
 brew 'git'
@@ -24,6 +26,8 @@ brew 'python'
 brew 'perl'
 brew 'go'
 brew 'node'
+
+brew 'rbenv'
 
 brew 'carthage'
 
