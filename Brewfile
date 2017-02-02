@@ -13,6 +13,7 @@ brew 'z'
 brew 'mas'
 
 brew 'gawk'
+brew 'gnu-tar'
 
 brew 'reattach-to-user-namespace'
 
