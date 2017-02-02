@@ -16,6 +16,9 @@ syntax enable
 set background=dark
 colorscheme hybrid
 
+" fzf
+set rtp+=/usr/local/opt/fzf
+
 " Powerline
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
