@@ -47,6 +47,8 @@ brew 'elinks'
 brew 'wget'
 brew 'googler'
 
+brew 'kubectl'
+
 cask 'adobe-acrobat'
 cask 'adobe-creative-cloud'
 cask 'adobe-photoshop-cc'
