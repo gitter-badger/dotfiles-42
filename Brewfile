@@ -8,6 +8,7 @@ brew 'tmux'
 
 brew 'ghq'
 brew 'peco'
+brew 'fzf'
 brew 'z'
 brew 'mas'
 
