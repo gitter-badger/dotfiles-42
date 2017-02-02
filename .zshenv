@@ -59,3 +59,6 @@ export NODE_PATH=/usr/local/lib/node_modules
 export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
+
+# Terminal
+export TERM=xterm-256color
