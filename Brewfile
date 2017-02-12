@@ -19,6 +19,7 @@ brew 'reattach-to-user-namespace'
 
 brew 'git'
 brew 'gist'
+brew 'gibo'
 brew 'git-secrets'
 brew 'hub', args: ['HEAD']
 brew 'ghi'
@@ -32,6 +33,8 @@ brew 'node'
 
 brew 'rbenv'
 
+brew 'sqlite'
+
 brew 'carthage'
 
 brew 'awscli'
@@ -43,7 +46,6 @@ brew 'jq'
 brew 'q'
 brew 'nkf'
 brew 'terminal-notifier'
-brew 'doxygen'
 brew 'w3m'
 brew 'elinks'
 brew 'wget'
@@ -73,6 +75,7 @@ cask 'karabiner-elements'
 cask 'kindle'
 cask 'sketch'
 cask 'skitch'
+cask 'shady'
 cask 'spectacle'
 cask 'spotify'
 cask 'vagrant'
