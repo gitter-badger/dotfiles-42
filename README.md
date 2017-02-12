@@ -19,13 +19,19 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew bundle
 ```
 
-### Change Login Shell to Zsh
+### Zsh
+
+#### Change Login Shell to Zsh
 
 `$ chsh -s /usr/local/bin/zsh`
 
-- then, restart Terminal 
+- then, restart Terminal
 
-### Install zsh-plugins
+#### Install oh-my-zsh
+
+`$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`
+
+#### Install zsh-plugins
 
 ```text
 $ cd ~/.oh-my-zsh/custom/plugins
@@ -33,7 +39,9 @@ $ cd ~/.oh-my-zsh/custom/plugins
 $ git clone git@github.com:marzocchi/zsh-notify.git notify
 ```
 
-### Install tpm (Tmux Plugin Manager)
+### Tmux
+
+#### Install tpm (Tmux Plugin Manager)
 
 `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
