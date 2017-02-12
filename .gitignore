@@ -4,9 +4,15 @@
 .atom/compile-cache/
 .atom/packages/
 .atom/storage/
+
 .tmux/resurrect/
-.tmux/plugins/
+.tmux/plugins/*
+!.tmux/plugins/.keep
+
 .vim/bundle/
 .vim/tmp/*
 !.vim/tmp/.keep
 .vim/.netrwhist
+
+.zsh/plugins/*
+!.zsh/plugins/.keep
