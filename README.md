@@ -39,7 +39,7 @@ $ cd ~/.oh-my-zsh/custom/plugins
 $ git clone git@github.com:marzocchi/zsh-notify.git notify
 ```
 
-### tmux
+#### Tmux
 
 Install Powerline
 
@@ -57,5 +57,4 @@ Install tpm (Tmux Plugin Manager)
 
 `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
-Reload TMUX environment with `prefix + R`
-Install tmux plugins with `prefix + I`
+Reload TMUX environment with `prefix + R` and Install tmux plugins with `prefix + I`
