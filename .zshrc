@@ -72,6 +72,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# Autocomplete
+autoload -U compinit
+compinit
+
 # History
 HISTSIZE=1000000
 SAVEHIST=$HISTSIZE
