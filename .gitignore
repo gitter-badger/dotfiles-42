@@ -7,5 +7,6 @@
 .tmux/resurrect/
 .tmux/plugins/
 .vim/bundle/
-.vim/tmp/
+.vim/tmp/*
+!.vim/tmp/.keep
 .vim/.netrwhist
