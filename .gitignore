@@ -10,8 +10,10 @@
 !.tmux/plugins/.keep
 
 .vim/bundle/
-.vim/tmp/*
-!.vim/tmp/.keep
+.vim/swp/*
+!.vim/swp/.keep
+.vim/backup/*
+!.vim/backup/.keep
 .vim/.netrwhist
 
 .zsh/plugins/*

@@ -27,7 +27,6 @@ if [ ! -d ${HOME}/.oh-my-zsh/custom/plugins/notify ]; then
     git clone https://github.com/marzocchi/zsh-notify ${HOME}/.oh-my-zsh/custom/plugins/notify
 fi
 
-
 ### change the login shell
 readonly ZSH=/usr/local/bin/zsh
 
@@ -51,15 +50,18 @@ ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 # GUI Application
 
 ## iTerm2
-if [ -d ${HOME}/Library/Application\ Support/iTerm2/DynamicProfiles/ ]; then
-    ln -snfv ${DOT_DIRECTORY}/iterm2_dynamic_profiles.json ${HOME}/Library/Application\ Support/iTerm2/DynamicProfiles/
+ITERM_PROFILE_DIR="${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
+if [ -d "${ITERM_PROFILE_DIR}" ]; then
+    ln -snfv ${DOT_DIRECTORY}/iterm_profiles.json "${ITERM_PROFILE_DIR}"
 fi
 
 ## Karabiner
-if [ -d ${HOME}/Library/Application\ Support/Karabiner/DynamicProfiles/ ]; then
-    ln -snfv ${DOT_DIRECTORY}/karabiner.xml ${HOME}/Library/Application\ Support/Karabiner/private.xml
+KARABINER_CONFIG_DIR="${HOME}/Library/Application Support/Karabiner"
+if [ -d "${KARABINER_CONFIG_DIR}" ]; then
+    ln -snfv ${DOT_DIRECTORY}/karabiner.xml "${KARABINER_CONFIG_DIR}/private.xml"
 fi
 
-if [ -d ${HOME}/Library/Application\ Support/iTerm2/DynamicProfiles/ ]; then
-    ln -snfv ${DOT_DIRECTORY}/karabiner.json ${HOME}/.config/karabiner/
+KARABINER_ELEMENT_CONFIG_DIR="${HOME}/.config/karabiner"
+if [ -d "${KARABINER_ELEMENT_CONFIG_DIR}" ]; then
+    ln -snfv ${DOT_DIRECTORY}/karabiner-elements.json "${KARABINER_ELEMENT_CONFIG_DIR}/karabiner.json"
 fi

@@ -46,7 +46,7 @@ ZSH_CUSTOM=${HOME}/.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bundler brew git osx rails ruby notify)
+plugins=(bundler brew git osx ruby notify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,6 +72,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# Autocomplete
+autoload -U compinit
+compinit
+
 # History
 HISTSIZE=1000000
 SAVEHIST=$HISTSIZE
@@ -91,13 +96,12 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
-
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/lyuich/google-cloud-sdk/path.zsh.inc ]; then
+if [ -f ${HOME}/google-cloud-sdk/path.zsh.inc ]; then
   source '/Users/lyuich/google-cloud-sdk/path.zsh.inc'
 fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/lyuich/google-cloud-sdk/completion.zsh.inc ]; then
+if [ -f ${HOME}/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/lyuich/google-cloud-sdk/completion.zsh.inc'
 fi
