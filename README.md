@@ -23,15 +23,15 @@ $ brew bundle
 
 #### Zsh
 
-- Change Login Shell to Zsh
+Change Login Shell to Zsh
 
 `$ chsh -s /usr/local/bin/zsh`
 
-- install oh-my-zsh
+Install oh-my-zsh
 
 `$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`
 
-- install zsh-plugins
+Install zsh-plugins
 
 ```text
 $ cd ~/.oh-my-zsh/custom/plugins
@@ -41,11 +41,11 @@ $ git clone git@github.com:marzocchi/zsh-notify.git notify
 
 ### tmux
 
-- install Powerline
+Install Powerline
 
 `$ pip install --user powerline-status`
 
-- install powerline font
+Install powerline font
 
 ```text
 $ git clone https://git@github.com/powerline/fonts.git
@@ -53,9 +53,9 @@ $ sh fonts/install.sh
 $ rm -rf fonts
 ```
 
-- install tpm (Tmux Plugin Manager)
+Install tpm (Tmux Plugin Manager)
 
 `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
-- Reload TMUX environment with `prefix + R`
-- install tmux plugins with `prefix + I`
+Reload TMUX environment with `prefix + R`
+Install tmux plugins with `prefix + I`
