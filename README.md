@@ -4,11 +4,26 @@ lyuich's dotfiles
 
 ## Installation
 
+- open Terminal.app (or Iterm2)
+
 ```text
 $ git clone https://github.com/lyuich/dotfiles .dotfiles
 $ cd .dotfiles
 $ sh install.sh
 ```
+
+### Install with Homebrew
+
+```text
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew bundle
+```
+
+### Change Login Shell to Zsh
+
+`$ chsh -s /usr/local/bin/zsh`
+
+- then, restart Terminal 
 
 ### Install zsh-plugins
 
