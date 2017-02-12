@@ -1,7 +1,10 @@
 cask_args appdir: '/Applications'
 
+# tap
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 
+# brew
 brew 'vim', args: ['with-lua']
 brew 'zsh'
 brew 'tmux'
@@ -50,9 +53,9 @@ brew 'w3m'
 brew 'elinks'
 brew 'wget'
 brew 'googler'
-
 brew 'kubectl'
 
+# cask
 cask 'adobe-acrobat'
 cask 'adobe-creative-cloud'
 cask 'adobe-photoshop-cc'
@@ -83,6 +86,10 @@ cask 'virtualbox'
 cask 'zeplin'
 cask 'zoomus'
 
+# font
+cask 'font-source-code-pro-for-powerline'
+
+# mas
 mas '1Password', id: 443987910
 mas 'Xcode', id: 497799835 
 mas 'TweetDeck', id: 485812721 

@@ -4,7 +4,7 @@ lyuich's dotfiles
 
 ## Installation
 
-- open Terminal.app (or Iterm2)
+### ShellScript
 
 ```text
 $ git clone https://github.com/lyuich/dotfiles .dotfiles
@@ -12,26 +12,26 @@ $ cd .dotfiles
 $ sh install.sh
 ```
 
-### Install with Homebrew
+### Manually Installation
+
+#### Homebrew
 
 ```text
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew bundle
 ```
 
-### Zsh
+#### Zsh
 
-#### Change Login Shell to Zsh
+- Change Login Shell to Zsh
 
 `$ chsh -s /usr/local/bin/zsh`
 
-- then, restart Terminal
-
-#### Install oh-my-zsh
+- install oh-my-zsh
 
 `$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`
 
-#### Install zsh-plugins
+- install zsh-plugins
 
 ```text
 $ cd ~/.oh-my-zsh/custom/plugins
@@ -39,9 +39,21 @@ $ cd ~/.oh-my-zsh/custom/plugins
 $ git clone git@github.com:marzocchi/zsh-notify.git notify
 ```
 
-### Tmux
+### tmux
 
-#### Install tpm (Tmux Plugin Manager)
+- install Powerline
+
+`$ pip install --user powerline-status`
+
+- install powerline font
+
+```text
+$ git clone https://git@github.com/powerline/fonts.git
+$ sh fonts/install.sh
+$ rm -rf fonts
+```
+
+- install tpm (Tmux Plugin Manager)
 
 `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
