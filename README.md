@@ -45,14 +45,6 @@ $ git clone git@github.com:marzocchi/zsh-notify.git notify
 
 `$ pip install --user powerline-status`
 
-- install powerline font
-
-```text
-$ git clone https://git@github.com/powerline/fonts.git
-$ sh fonts/install.sh
-$ rm -rf fonts
-```
-
 #### Install tpm (Tmux Plugin Manager)
 
 `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
