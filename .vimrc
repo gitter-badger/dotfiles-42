@@ -1,6 +1,6 @@
 set autoindent
-set dir=$HOME/.vim/tmp
-set backupdir=$HOME/.vimbackup
+set dir=$HOME/.vim/swp
+set backupdir=$HOME/.vim/backup
 set clipboard=unnamed,autoselect
 set backup
 set number
