@@ -85,3 +85,4 @@ mas 'Xcode', id: 497799835
 mas 'TweetDeck', id: 485812721 
 mas 'Slack', id: 803453959 
 mas 'DaisyDisk', id: 411643860
+mas 'ColorPicker', id: 641027709
