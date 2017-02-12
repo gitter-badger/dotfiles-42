@@ -27,7 +27,6 @@ if [ ! -d ${HOME}/.oh-my-zsh/custom/plugins/notify ]; then
     git clone https://github.com/marzocchi/zsh-notify ${HOME}/.oh-my-zsh/custom/plugins/notify
 fi
 
-
 ### change the login shell
 readonly ZSH=/usr/local/bin/zsh
 
