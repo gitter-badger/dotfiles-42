@@ -52,7 +52,7 @@ ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 ## iTerm2
 ITERM_PROFILE_DIR="${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 if [ -d "${ITERM_PROFILE_DIR}" ]; then
-    ln -snfv ${DOT_DIRECTORY}/iterm2_dynamic_profiles.json "${ITERM_PROFILE_DIR}"
+    ln -snfv ${DOT_DIRECTORY}/iterm_profiles.json "${ITERM_PROFILE_DIR}"
 fi
 
 ## Karabiner
