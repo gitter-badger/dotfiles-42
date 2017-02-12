@@ -34,7 +34,9 @@ brew 'rbenv'
 
 brew 'carthage'
 
+brew 'awscli'
 brew 'ansible'
+brew 'terraform'
 
 brew 'tree'
 brew 'jq'
