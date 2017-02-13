@@ -48,11 +48,15 @@ brew 'tree'
 brew 'jq'
 brew 'q'
 brew 'nkf'
+brew 'pandoc'
+
 brew 'terminal-notifier'
 brew 'w3m'
 brew 'elinks'
 brew 'wget'
+
 brew 'googler'
+brew 'translate-shell'
 brew 'kubectl'
 
 # cask
