@@ -41,6 +41,10 @@ $ git clone git@github.com:marzocchi/zsh-notify.git notify
 
 #### Tmux
 
+Install psutil
+
+`$ pip install psutil`
+
 Install Powerline
 
 `$ pip install --user powerline-status`
