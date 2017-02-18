@@ -65,3 +65,9 @@ KARABINER_ELEMENT_CONFIG_DIR="${HOME}/.config/karabiner"
 if [ -d "${KARABINER_ELEMENT_CONFIG_DIR}" ]; then
     ln -snfv ${DOT_DIRECTORY}/karabiner-elements.json "${KARABINER_ELEMENT_CONFIG_DIR}/karabiner.json"
 fi
+
+## Spectacle
+SPECTACLE_CONFIG_DIR="${HOME}/Library/Application Support/Spectacle"
+if [ -d "${SPECTACLE_CONFIG_DIR}" ]; then
+    ln -snfv ${DOT_DIRECTORY}/spectacle.json "${SPECTACLE_CONFIG_DIR}/Shortcuts.json"
+fi
