@@ -2,6 +2,11 @@
 set -e
 DOT_DIRECTORY="${HOME}/.dotfiles"
 
+ITERM_PROFILE_DIR="${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
+KARABINER_CONFIG_DIR="${HOME}/Library/Application Support/Karabiner"
+KARABINER_ELEMENT_CONFIG_DIR="${HOME}/.config/karabiner"
+KEYHAC_CONFIG_DIR="${HOME}/Library/Application Support/Keyhac"
+
 cd ${DOT_DIRECTORY}
 
 # Install apps and fonts with Homebrew
@@ -50,18 +55,20 @@ ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 # GUI Application
 
 ## iTerm2
-ITERM_PROFILE_DIR="${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 if [ -d "${ITERM_PROFILE_DIR}" ]; then
     ln -snfv ${DOT_DIRECTORY}/iterm_profiles.json "${ITERM_PROFILE_DIR}"
 fi
 
 ## Karabiner
-KARABINER_CONFIG_DIR="${HOME}/Library/Application Support/Karabiner"
 if [ -d "${KARABINER_CONFIG_DIR}" ]; then
     ln -snfv ${DOT_DIRECTORY}/karabiner.xml "${KARABINER_CONFIG_DIR}/private.xml"
 fi
 
-KARABINER_ELEMENT_CONFIG_DIR="${HOME}/.config/karabiner"
 if [ -d "${KARABINER_ELEMENT_CONFIG_DIR}" ]; then
     ln -snfv ${DOT_DIRECTORY}/karabiner-elements.json "${KARABINER_ELEMENT_CONFIG_DIR}/karabiner.json"
+fi
+
+## Keyhac
+if [ -d "${KEYHAC_CONFIG_DIR}" ]; then
+    ln -snfv ${DOT_DIRECTORY}/keyhac.py "${KEYHAC_CONFIG_DIR}/config.py"
 fi
