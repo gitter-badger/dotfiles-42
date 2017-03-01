@@ -58,3 +58,5 @@ Install tpm (Tmux Plugin Manager)
 `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
 Reload TMUX environment with `prefix + R` and Install tmux plugins with `prefix + I`
+
+test for Git2Go
