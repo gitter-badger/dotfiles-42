@@ -45,6 +45,8 @@ brew 'awscli'
 brew 'ansible'
 brew 'terraform'
 
+brew 'imagemagick'
+
 brew 'tree'
 brew 'jq'
 brew 'q'
