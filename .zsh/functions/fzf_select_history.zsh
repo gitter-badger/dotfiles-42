@@ -19,5 +19,5 @@ fzf-select-history() {
         fi
     fi
 }
-zle -N fzf-select-history
-bindkey '^r' fzf-select-history
+# zle -N fzf-select-history
+# bindkey '^r' fzf-select-history
