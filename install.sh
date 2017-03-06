@@ -75,4 +75,3 @@ fi
 if [ -d "${KEYHAC_CONFIG_DIR}" ]; then
     ln -snfv ${DOT_DIRECTORY}/keyhac.py "${KEYHAC_CONFIG_DIR}/config.py"
 fi
-
