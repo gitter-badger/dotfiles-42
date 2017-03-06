@@ -15,6 +15,7 @@ brew 'fzf'
 brew 'z'
 brew 'mas'
 
+brew 'the_silver_searcher'
 brew 'gawk'
 brew 'gnu-tar'
 
