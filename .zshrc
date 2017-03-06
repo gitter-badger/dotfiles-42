@@ -105,3 +105,5 @@ fi
 if [ -f ${HOME}/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/lyuich/google-cloud-sdk/completion.zsh.inc'
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

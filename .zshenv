@@ -62,3 +62,6 @@ export PAGER='less'
 
 # Terminal
 export TERM=xterm-256color
+
+# FZF
+FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
