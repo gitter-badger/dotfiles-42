@@ -52,6 +52,9 @@ if [ ! -d ${HOME}/.tmux/plugins/tpm ]; then
 fi
 ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 
+## fzf: install useful keybindings and fuzzy completion
+[[ ! -f ~/.fzf.zsh ]] && /usr/local/opt/fzf/install
+
 # GUI Application
 
 ## iTerm2
@@ -72,3 +75,4 @@ fi
 if [ -d "${KEYHAC_CONFIG_DIR}" ]; then
     ln -snfv ${DOT_DIRECTORY}/keyhac.py "${KEYHAC_CONFIG_DIR}/config.py"
 fi
+
