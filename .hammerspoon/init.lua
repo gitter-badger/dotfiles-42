@@ -52,6 +52,10 @@ remapKey({'ctrl'}, 'f', keyCode('right'))
 remapKey({'ctrl'}, 'b', keyCode('left'))
 remapKey({'ctrl'}, 'n', keyCode('down'))
 remapKey({'ctrl'}, 'p', keyCode('up'))
+remapKey({'alt'}, 'f', keyCode('right', {'at'}))
+remapKey({'alt'}, 'b', keyCode('left', {'alt'}))
+remapKey({'alt', 'shift'}, ',', keyCode('up', {'cmd'}))
+remapKey({'alt', 'shift'}, '.', keyCode('down', {'cmd'}))
 
 -- edit text
 remapKey({'ctrl'}, 'w', keyCode('delete', {'alt'}))
