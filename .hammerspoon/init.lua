@@ -36,7 +36,7 @@ end
 local function handleGlobalAppEvent(name, event, app)
    if event == hs.application.watcher.activated then
       -- hs.alert.show(name)
-      if name == 'iTerm2' or name == 'Xcode' then
+      if name == 'iTerm2' then
          disableAllHotkeys()
       else
          enableAllHotkeys()
@@ -52,10 +52,18 @@ remapKey({'ctrl'}, 'f', keyCode('right'))
 remapKey({'ctrl'}, 'b', keyCode('left'))
 remapKey({'ctrl'}, 'n', keyCode('down'))
 remapKey({'ctrl'}, 'p', keyCode('up'))
+remapKey({'alt'}, 'f', keyCode('right', {'alt'}))
+remapKey({'alt'}, 'b', keyCode('left', {'alt'}))
+remapKey({'alt', 'shift'}, ',', keyCode('up', {'cmd'}))
+remapKey({'alt', 'shift'}, '.', keyCode('down', {'cmd'}))
 
 -- edit text
 remapKey({'ctrl'}, 'w', keyCode('delete', {'alt'}))
-remapKey({'ctrl'}, 'u', keyCode('delete', {'cmd'}))
+remapKey({'alt'}, 'w', keyCode('delete', {'cmd'}))
+remapKey({'ctrl'}, 'u', keyCodeSet({
+  keyCode('e', {'ctrl'}),
+  keyCode('delete', {'cmd'})
+}))
 
 -- command
 remapKey({'ctrl'}, 's', keyCode('f', {'cmd'}))
