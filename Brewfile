@@ -15,6 +15,7 @@ brew 'fzf'
 brew 'z'
 brew 'mas'
 
+brew 'the_silver_searcher'
 brew 'gawk'
 brew 'gnu-tar'
 
@@ -43,6 +44,8 @@ brew 'carthage'
 brew 'awscli'
 brew 'ansible'
 brew 'terraform'
+
+brew 'imagemagick'
 
 brew 'tree'
 brew 'jq'
