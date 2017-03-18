@@ -39,6 +39,7 @@ brew 'rbenv'
 
 brew 'sqlite'
 
+brew 'npm'
 brew 'carthage'
 
 brew 'awscli'
@@ -46,6 +47,7 @@ brew 'ansible'
 brew 'terraform'
 
 brew 'imagemagick'
+brew 'nativefier'
 
 brew 'tree'
 brew 'jq'
