@@ -103,3 +103,4 @@ mas 'TweetDeck', id: 485812721
 mas 'Slack', id: 803453959 
 mas 'DaisyDisk', id: 411643860
 mas 'ColorPicker', id: 641027709
+mas 'TableTool', id: 1122008420
