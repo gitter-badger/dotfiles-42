@@ -16,3 +16,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 ### Added by the Bluemix CLI
 source /usr/local/Bluemix/bx/bash_autocomplete
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
