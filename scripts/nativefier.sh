@@ -9,11 +9,19 @@ ICON_DIR="${DOT_DIR}/assets"
 
 cd ${APP_DIR}
 
-app_name="Plan" 
-icon_name="$(echo $app_name | tr '[:upper:]' '[:lower:]')"
+apps=(
+    "Plan https://getplan.co"
+    "Coggle https://coggle.it"
+)
 
-if [ ! -d ${APP_DIR}/${app_name}.app ]; then
-    nativefier -n "Plan" -i "${ICON_DIR}/${icon_name}.icns" "https://getplan.co/" $APP_DIR
-    mv "${APP_DIR}/${app_name}-darwin-x64/${app_name}.app" $APP_DIR
-    rm -rf "${APP_DIR}/${app_name}-darwin-x64/"
-fi
+for app in "${apps[@]}"
+do
+    a=(${app[@]})
+    i="$(echo ${a[0]} | tr '[:upper:]' '[:lower:]')"
+
+    if [ ! -d ${APP_DIR}/${a[0]}.app ]; then
+        nativefier -n ${a[0]} -i "${ICON_DIR}/${i}.icns" ${a[1]} $APP_DIR
+        mv "${APP_DIR}/${a[0]}-darwin-x64/${a[0]}.app" $APP_DIR
+        rm -rf "${APP_DIR}/${a[0]}-darwin-x64/"
+    fi
+done

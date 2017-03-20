@@ -36,6 +36,7 @@ brew 'go'
 brew 'node'
 
 brew 'rbenv'
+brew 'nodebrew'
 
 brew 'sqlite'
 
