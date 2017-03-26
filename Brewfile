@@ -41,6 +41,7 @@ brew 'nodebrew'
 brew 'sqlite'
 
 brew 'npm'
+brew 'yarn'
 brew 'carthage'
 
 brew 'awscli'
