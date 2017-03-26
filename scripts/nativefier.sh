@@ -12,16 +12,19 @@ cd ${APP_DIR}
 apps=(
     "Plan https://getplan.co"
     "Coggle https://coggle.it"
+    "Power_BI https://app.powerbi.com"
 )
 
 for app in "${apps[@]}"
 do
     a=(${app[@]})
-    i="$(echo ${a[0]} | tr '[:upper:]' '[:lower:]')"
+    name="$(echo ${a[0]} | sed 's/_/ /g')"
+    url=${a[1]}
+    icon="$(echo ${a[0]} | tr '[:upper:]' '[:lower:]')"
 
-    if [ ! -d ${APP_DIR}/${a[0]}.app ]; then
-        nativefier -n ${a[0]} -i "${ICON_DIR}/${i}.icns" ${a[1]} $APP_DIR
-        mv "${APP_DIR}/${a[0]}-darwin-x64/${a[0]}.app" $APP_DIR
-        rm -rf "${APP_DIR}/${a[0]}-darwin-x64/"
+    if [ ! -d "${APP_DIR}/${name}.app" ]; then
+        nativefier -n "${name}" -i "${ICON_DIR}/${icon}.icns" ${url} $APP_DIR
+        mv "${APP_DIR}/${name}-darwin-x64/${name}.app" $APP_DIR
+        rm -rf "${APP_DIR}/${name}-darwin-x64/"
     fi
 done
