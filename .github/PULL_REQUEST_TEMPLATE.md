@@ -1,4 +1,4 @@
-### Github Issue URL/Tags
+### GitHub Issue URL/Tags
 
 - `(required)`
 
