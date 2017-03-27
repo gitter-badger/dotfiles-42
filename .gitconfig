@@ -48,6 +48,7 @@
 
 [ghq]
 	root = ~/.ghq
+	root = ~/.go/src
 
 [ghi]
 	editor = vim
