@@ -15,6 +15,7 @@
 .vim/backup/*
 !.vim/backup/.keep
 .vim/.netrwhist
+.vim/plugged/
 
 .zsh/plugins/*
 !.zsh/plugins/.keep
