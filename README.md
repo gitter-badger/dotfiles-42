@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Join the chat at https://gitter.im/lyuich-dotfiles/Lobby](https://badges.gitter.im/lyuich-dotfiles/Lobby.svg)](https://gitter.im/lyuich-dotfiles/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 lyuich's dotfiles
 
 ## Installation
